@@ -1,0 +1,10 @@
+@media (max-width: 425px){
+    .form-group textarea {
+        width: 400px;
+      }
+}
+@media (max-width: 320px){
+  .form-group textarea{
+    width: 300px;
+  }
+}

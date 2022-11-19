@@ -1,0 +1,385 @@
+/*base*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Jaquel";
+  src: url(../assets/fonts/Web\ Fonts/Jaquel-regular.ttf);
+}
+/*desktop*/
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: black;
+}
+
+header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  margin: 16px 0px 0px 10px;
+}
+
+.color-bar {
+  width: 100%;
+  height: 5px;
+  background-color: orange;
+}
+
+.nav-menu {
+  display: flex;
+  margin: 30px;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-item {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: "Jaquel";
+}
+.nav-item:hover {
+  color: #ff8300;
+}
+
+ul :hover {
+  color: #ff8300;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: #ff8300;
+  margin: 0px 0px 24px;
+  padding: 10px;
+  font-size: 32px;
+  font-family: "Jaquel";
+}
+
+p {
+  font-family: "Jaquel";
+  color: rgb(104, 103, 103);
+}
+
+h3 {
+  color: #ff8300;
+  font-size: 24px;
+  margin: 0px 0px 8px;
+  padding: 0px 25px 24px 0px;
+  font-family: "Jaquel";
+}
+
+.hero img {
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin: 0px 50px;
+}
+
+.espacio-blanco {
+  width: 100%;
+  height: 200px;
+  background-color: white;
+}
+
+.descripciones {
+  display: flex;
+  font-size: 12px;
+  gap: 10px;
+  margin-top: 30px;
+  font-family: "Jaquel";
+}
+
+.iframe-pradecon {
+  display: flex;
+  justify-content: center;
+}
+
+.orange-bar {
+  height: 3px;
+  background-color: #ff8300;
+}
+
+.orange-bar-top {
+  height: 3px;
+  background-color: #ff8300;
+  margin-top: 50px;
+}
+
+.lafrase {
+  display: flex;
+  justify-content: center;
+  color: #ff8300;
+  font-family: "Jaquel";
+}
+
+.container-prod-servi {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin: 0px 50px;
+}
+
+.productos-galeria {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+}
+.productos-galeria img {
+  margin: 30px 0px;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.servicios p {
+  text-align: center;
+  font-size: 20px;
+}
+
+.tarjetas-cont {
+  display: flex;
+  justify-content: center;
+  margin: 20px 60px;
+}
+
+.tarjeta {
+  background-color: rgb(231, 231, 231);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  margin: 10px 30px;
+  height: 500px;
+}
+.tarjeta img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  margin: 10px 0px;
+}
+
+.nombre-tarjeta {
+  padding: 0px 30px;
+  font-size: 17px;
+  color: black;
+}
+
+.des-tarjeta {
+  font-size: 10px;
+  margin: 0px 20px;
+}
+
+.parrafo-cont {
+  font-size: 12px;
+  color: rgb(104, 103, 103);
+  margin: 5% 0% 0px 0px;
+}
+
+.form-group {
+  margin: 15px 0px;
+}
+
+input, textarea {
+  border-radius: 5px;
+  border-color: #ff8300;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  background-color: rgb(43, 42, 42);
+}
+
+.le-damos-vida {
+  background-color: #ff8300;
+  margin-top: 50px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+footer ul {
+  display: flex;
+  margin: 60px 0px;
+}
+footer ul li {
+  gap: 10px;
+  list-style: none;
+  color: white;
+  margin: 0px 20px;
+}
+
+/*tablet*/
+@media (max-width: 860px) {
+  .hamburger {
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 53px;
+    gap: 60px;
+    flex-direction: column;
+    background-color: #ff8300;
+    width: 90%;
+    height: 100vh;
+    text-align: start;
+    transition: 0.3s;
+  }
+  .nav-menu.active {
+    left: 0;
+  }
+}
+@media (max-width: 860px) {
+  h2 {
+    text-align: center;
+  }
+}
+@media (max-width: 860px) {
+  .productos-galeria {
+    display: grid;
+  }
+  .container-prod-servi {
+    margin: 50px;
+  }
+}
+@media (max-width: 860px) {
+  .nombre-tarjeta {
+    font-size: 20px;
+    color: black;
+  }
+  .espacio-blanco {
+    height: 70px;
+  }
+}
+@media (max-width: 860px) {
+  footer ul {
+    display: flex;
+  }
+}
+/*mobile*/
+@media (max-width: 425px) {
+  .color-bar {
+    width: 100%;
+    height: 5px;
+    background-color: orange;
+  }
+}
+@media (max-width: 375px) {
+  .color-bar {
+    width: 100%;
+    height: 5px;
+    background-color: orange;
+  }
+}
+@media (max-width: 425px) {
+  .hero img {
+    width: 100%;
+  }
+}
+@media (max-width: 425px) {
+  .descripciones {
+    flex-direction: column;
+    gap: 40px;
+  }
+  iframe {
+    height: 300px;
+  }
+  .hero img {
+    height: 700px;
+    width: 425px;
+  }
+}
+@media (max-width: 320px) {
+  .lafrase {
+    text-align: center;
+  }
+}
+@media (max-width: 425px) {
+  .le-damos-vida {
+    width: 90%;
+  }
+  ul {
+    flex-direction: column;
+  }
+  li h4 {
+    margin: 20px 0px;
+  }
+}
+@media (max-width: 425px) {
+  .container-prod-servi {
+    margin-top: 60px;
+  }
+  .productos-galeria {
+    display: grid;
+    grid-template-columns: auto;
+  }
+}
+@media (max-width: 425px) {
+  .tarjetas-cont {
+    flex-direction: column;
+  }
+  .tarjeta {
+    height: 400px;
+  }
+}
+@media (max-width: 320px) {
+  .tarjeta img {
+    width: 100px;
+    height: 100px;
+  }
+}
+.tarjetas-cont {
+  margin: 20px 40px;
+}
+
+.tarjeta {
+  height: 300px;
+}
+
+@media (max-width: 425px) {
+  .form-group textarea {
+    width: 400px;
+  }
+}
+@media (max-width: 320px) {
+  .form-group textarea {
+    width: 300px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

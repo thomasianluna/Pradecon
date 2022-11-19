@@ -1,0 +1,23 @@
+@media (max-width: 425px){
+    .tarjetas-cont {
+        flex-direction: column;
+      }
+      
+      .tarjeta {
+        height: 400px;
+      }
+}
+@media (max-width: 320px) {
+  .tarjeta img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.tarjetas-cont {
+  margin: 20px 40px;
+}
+
+.tarjeta {
+  height: 300px;
+}

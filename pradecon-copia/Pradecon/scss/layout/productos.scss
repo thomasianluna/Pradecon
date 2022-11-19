@@ -1,0 +1,19 @@
+.container-prod-servi {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 0px 50px;
+  }
+  
+  .productos-galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  
+    img {
+      margin: 30px 0px;
+      width: 300px;
+      height: 300px;
+      border-radius: 10px;
+    }
+  }

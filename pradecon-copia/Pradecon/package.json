@@ -1,0 +1,19 @@
+{
+  "name": "pradecon",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "pradecon, le damos vida al acero. empresa metalururgica. conformado de chapas y perfiles para la construccion",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thomasianluna/pradecon.com-copia.git"
+  },
+  "bugs": {
+    "url": "https://github.com/thomasianluna/pradecon.com-copia/issues"
+  },
+  "homepage": "https://github.com/thomasianluna/pradecon.com-copia#readme"
+}

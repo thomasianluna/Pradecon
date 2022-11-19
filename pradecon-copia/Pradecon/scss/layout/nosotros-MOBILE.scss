@@ -1,0 +1,18 @@
+@media (max-width: 425px){
+    .descripciones {
+        flex-direction: column;
+        gap: 40px;
+      }
+      iframe {
+        height: 300px;
+      }
+      .hero img {
+        height: 700px;
+        width: 425px;
+      }
+}
+@media (max-width: 320px){
+  .lafrase{
+    text-align: center;
+  }
+}

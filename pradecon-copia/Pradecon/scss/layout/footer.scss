@@ -1,0 +1,28 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    background-color: rgb(43, 42, 42);
+  }
+  
+  .le-damos-vida {
+    background-color: #ff8300;
+    margin-top: 50px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  footer ul {
+    display: flex;
+    margin: 60px 0px;
+  
+    li {
+      gap: 10px;
+      list-style: none;
+      color: white;
+      margin: 0px 20px;
+    }
+  }

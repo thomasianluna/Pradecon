@@ -1,0 +1,53 @@
+.hamburger {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+  }
+  
+  header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    margin: 16px 0px 0px 10px;
+  }
+  
+  .color-bar {
+    width: 100%;
+    height: 5px;
+    background-color: orange;
+  }
+  
+  .nav-menu {
+    display: flex;
+    margin: 30px;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  .nav-item {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: "Jaquel";
+  
+    &:hover {
+      color: #ff8300;
+    }
+  }
+  
+  ul :hover {
+    color: #ff8300;
+  }
+  

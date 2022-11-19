@@ -1,0 +1,27 @@
+
+/*base*/
+@import "../scss/base/resets";
+@import "../scss/base/typo";
+/*desktop*/
+@import "../scss/layout/header.scss";
+@import "../scss/layout/general.scss";
+@import "../scss/layout/main.scss";
+@import "../scss/layout/nosotros.scss";
+@import "../scss/layout/productos.scss";
+@import "../scss/layout/servicios.scss";
+@import "../scss/layout/contacto.scss";
+@import "../scss/layout/footer.scss";
+/*tablet*/
+@import "../scss/layout/header-TABLET.scss";
+@import "../scss/layout/general-TABLET.scss";
+@import "../scss/layout/productos-TABLET.scss";
+@import "../scss/layout/servicios-TABLET.scss";
+@import "../scss/layout/footer-TABLET.scss";
+/*mobile*/
+@import "../scss/layout/header-MOBILE.scss";
+@import "../scss/layout/main-MOBILE.scss";
+@import "../scss/layout/nosotros-MOBILE.scss";
+@import "../scss/layout/footer-MOBILE.scss";
+@import "../scss/layout/productos-MOBILE.scss";
+@import "../scss/layout/servicios-MOBILE.scss";
+@import "../scss/layout/contacto-MOBILE.scss";
